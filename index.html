@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CalC</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+
+    // *condition
+    let Fan = prompt ('Enter the number of fan you use???')
+    let light = prompt ('Enter the number of light you use???')
+    let AC = prompt ('Enter the number of AC you use???')
+    let Fridge = prompt ('Enter the number of Fridge you use???')
+
+
+    let FanWatt = Fan * 10
+    let lightWatt = light * 5
+    let ACWatt = AC * 80
+    let FridgeWatt = Fridge * 50
+
+
+    let totalWattUse = FanWatt + lightWatt + ACWatt + FridgeWatt
+    let bill = totalWattUse * 300
+
+
+    document.write(`<h1 style="font-family:Serif;">Total Electricity Used: ${totalWattUse}`)
+    document.write(`<h1 style="font-family:Serif;">Total Electricity bill: ${bill} `)
+
+        if(bill > 2000 )
+        {
+        document.write(`<h2> Expensive, Well done! <h2>`)
+    }
+    else
+         {
+            document.write(`<h2> Reasonable, Good! <h2>`)
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
